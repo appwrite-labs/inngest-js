@@ -99,7 +99,7 @@ export function useInngestSubscription<
     if (tokenInput) setToken(tokenInput);
   }, [tokenInput]);
 
-  // Token fetch fallback on mount
+  // Token fetch fallback - runs when enabled changes or token is missing
   useEffect(() => {
     if (!token && enabled) {
       if (refreshToken) {
@@ -115,7 +115,7 @@ export function useInngestSubscription<
         setState(InngestSubscriptionState.Error);
       }
     }
-  }, []);
+  }, [enabled, refreshToken, token]);
 
   // Subscription management
   useEffect(() => {

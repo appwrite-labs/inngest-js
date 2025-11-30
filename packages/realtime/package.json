@@ -1,5 +1,5 @@
 {
-  "name": "@inngest/realtime",
+  "name": "@appwrite.io/inngest-realtime",
   "version": "0.4.5",
   "description": "",
   "main": "./index.js",
