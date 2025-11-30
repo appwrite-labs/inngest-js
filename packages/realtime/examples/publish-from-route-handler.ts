@@ -12,9 +12,9 @@ import {
   createChannelPublisher,
 } from "@appwrite.io/inngest-realtime";
 
-// ============================================================================
+// ===========================================================================
 // Example 1: Simple publish from a Next.js API route
-// ============================================================================
+// ===========================================================================
 
 export async function POST(request: Request) {
   const { projectId, status } = await request.json();
